@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Categories from './components/Categories';
 import Members from './components/Members';
 import Products from './components/Products';
+import Chatbot from './components/Chatbot';
 import './App.css';
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
                     <NavLink to="/products" activeClassName="active"> { }
                         Products
                     </NavLink>
+                    <NavLink to="/Chatbot" activeClassName="active"> { }
+                        Chat Bot
+                    </NavLink>
                 </div>
             </nav>
 
@@ -34,7 +38,9 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/categories" element={<Categories />} />
                     <Route path="/members" element={<Members />} />
-                    <Route path="/products" element={<Products />} /> { }
+                    <Route path="/products" element={<Products />} /> 
+                    <Route path="/Chatbot" element={<Chatbot/>} /> 
+
                 </Routes>
             </div>
         </Router>
